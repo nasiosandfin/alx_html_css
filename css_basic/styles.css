@@ -23,3 +23,42 @@ aside {
 }
 
 
+header {
+  background:linear-gradient(to right, #4CAF50, #2E7D32);
+  color: white;
+  padding: 10px;
+}
+
+
+article {
+  border-right: 2px solid #ddd;
+  padding: 15px;
+}
+aside {
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+
+.logo {
+  font-size: 2rem;
+  margin-right: 15px;
+  color: #4CAF50;
+}
+
+article h2 {
+  color: #2E7D32;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+
+
+
