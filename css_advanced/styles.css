@@ -33,3 +33,48 @@ header nav ul li a {
   font-size: 14px;
   font-family: 'Source Sans Pro', sans-serif;
 }
+/* Banner Section */
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url('./images/banner-background.png'); /* Export this from Figma */
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.banner h1 {
+  font-size: 120px;
+  font-weight: 700;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 40px;
+}
+
+.banner span {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.banner button {
+  margin-top: 40px;
+  padding: 16px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #c271ff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.banner button:hover {
+  background-color: #a05edb;
+}
