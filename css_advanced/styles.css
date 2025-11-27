@@ -196,3 +196,65 @@ header nav ul li a {
   margin: 0 16px 16px;
   color: #071629;
 }
+/* Membership Section */
+.membership-section {
+  background-color: #071629; /* Dark background from Figma */
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 120px;
+}
+
+.membership-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.membership-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.membership-card img {
+  width: 60px;
+  height: 60px;
+}
+
+.membership-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.membership-card p {
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 220px;
+  line-height: 1.5;
+}
+
+.membership-section button {
+  padding: 16px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #c271ff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.membership-section button:hover {
+  background-color: #a05edb;
+}
