@@ -8,6 +8,7 @@ This project implements the HTML from the “HTML, advanced concept” page and 
 - Validate HTML via W3C.
 
 ## Project structure
+ HEAD
 alx_html_css/ └── css_advanced/ ├── README.md ├── index.html └── images                                                                                                      ## How to run
 - Open  in any modern browser.
 
@@ -25,6 +26,13 @@ This project implements the HTML from the “HTML, advanced concept” page and 
 ## Project structure
 alx_html_css/ └── css_advanced/ ├── README.md ├── index.html └── images                                                                                                      ## How to run
 - Open  in any modern browser.
+=======
+alx_html_css/ └── css_advanced/ ├── README.md ├── index.html └── images/
+
+Code
+## How to run
+- Open `css_advanced/index.html` in any modern browser.
+ ce01764c640796ec8e8c9fd23a29ac9e5fee0703
 
 ## Author
 Sandfin — ALX Front-End
