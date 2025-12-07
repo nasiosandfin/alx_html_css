@@ -1,0 +1,132 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --primary-color: #FF6565;
+  --max-width: 1000px;
+  --font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Global styles */
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+  background: #fff;
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: var(--primary-color);
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.cta-btn:hover,
+.cta-btn:active {
+  opacity: 0.9;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Show desktop image by default */
+.desktop-img {
+  display: block;
+}
+
+.mobile-img {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Switch images */
+  .desktop-img {
+    display: none;
+  }
+
+  .mobile-img {
+    display: block;
+    margin-top: 20px;
+  }
+}
