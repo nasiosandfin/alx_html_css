@@ -1,4 +1,4 @@
-body {
+our-results {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
@@ -7,7 +7,7 @@ body {
   color: #555;
   background: #fff;
 }
-h1 {
+our-results h1 {
   font-size: 1.5em;
   font-weight: normal;
 }
