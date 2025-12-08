@@ -1,0 +1,133 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Variables */
+:root {
+  --primary: #FF6565;          /* accent color per spec */
+  --dark: #1f1f1f;
+  --text: #555;
+  --bg: #fff;
+  --maxw: 1000px;              /* content max width */
+}
+
+/* Layout */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Header (minimal) */
+.site-header .logo { font-size: 1.25rem; color: var(--dark); }
+
+/* Section */
+.our-results h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.our-results .intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.pentagon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Pentagon card */
+.pentagon {
+  text-align: center;
+  width: 200px;            /* float values can be rounded */
+}
+
+/* The pentagon shape (pure CSS) */
+.shape {
+  position: relative;
+  width: 160px;
+  height: 120px;           /* top hex-like body */
+  margin: 0 auto 12px;
+  background: var(--primary);
+  color: #fff;
+  display: grid;
+  place-items: center;     /* center the percentage */
+  border-radius: 6px 6px 0 0;
+  /* subtle depth */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Create the bottom point using a triangle */
+.shape::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -55px;           /* adjust to meet visual design */
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 55px solid var(--primary);
+}
+
+/* Percentage styling */
+.value {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Label styling */
+.label {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Hover/active interactions (match spec) */
+.pentagon .shape:hover,
+.pentagon .shape:active {
+  opacity: 0.9;            /* button hover/active opacity spec reused */
+  transition: opacity 0.2s ease;
+}
+
+/* Links (if any inside) */
+a { color: var(--dark); text-decoration: none; }
+a:hover, a:active { color: var(--primary); }
+
+/* Responsive switch at 480px */
+@media (max-width: 480px) {
+  .container { padding: 24px 16px; }
+
+  .pentagon-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .shape {
+    width: 140px;
+    height: 105px;
+  }
+
+  .shape::after {
+    border-left-width: 70px;
+    border-right-width: 70px;
+    border-top-width: 48px;
+    bottom: -48px;
+  }
+
+  .value { font-size: 1.75rem; }
+}
